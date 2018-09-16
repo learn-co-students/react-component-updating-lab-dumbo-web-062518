@@ -1,5 +1,5 @@
-import React, { Component } from 'react';
-
+import React, { Component, PureComponent } from 'react';
+// can do class timer extends PureComponent to get a reduction in updates
 class Timer extends Component {
 
     constructor() {
@@ -10,7 +10,6 @@ class Timer extends Component {
             color: '#' + Math.floor(Math.random() * 16777215).toString(16),
         }
     }
-
 
 
     //Your code here
